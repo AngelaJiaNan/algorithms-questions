@@ -30,4 +30,16 @@ function getEvenNumbersToTwenty() {
 var result = getEvenNumbersToTwenty();
 console.log('getEvenNumbersToTwenty()', result);
 
-function 
+function repeatWord(word, times) {
+  var count = 1;
+  var repeated = '';
+  while (count <= times) {
+    repeated += word;
+    count = count +1;
+  }
+  return repeated;
+}
+
+var word = repeatWord('math', 10);
+console.log('repeatWord()', word);
+
