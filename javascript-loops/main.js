@@ -71,3 +71,13 @@ function getKeys(object) {
 }
 var key = getKeys({ name: 'Angela', title: '24 hours'});
 console.log('getKeys(object)', key);
+
+function getValues(object) {
+  var values = [];
+  for (key in object) {
+    values.push(object[key]);
+  }
+  return values;
+}
+var result3 = getValues({ isbn: '9534', title: 'math', author: 'Dr.Axel' });
+console.log('getValues({ isbn: 9534, title: math, author: Dr.Axel })', result3);
