@@ -9,5 +9,5 @@ function tail(array) {
 
 // another Soultion :
 // function tail(array) {
-//   return array.splice(1);
+//   return array.slice(1);
 // }
