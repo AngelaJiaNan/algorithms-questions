@@ -10,8 +10,29 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body {
+      background-color: hsl(30, 38%, 92%);
+      font-size: 14px;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .container {
+      display: flex;
+    }
+    .product-infor {
+      background-color: hsl(0, 0%, 100%);
+    }
+    .price {
+      display:flex;
+      gap: 3rem;
+    }
+    h2 {
+      color:hsl(158, 36%, 37%);
+    }
+    button {
+      background-color: hsl(158, 36%, 37%);
+      color:hsl(0, 0%, 100%);
+    }
   </style>
 </head>
 <body>
@@ -20,28 +41,27 @@
       <img src="images/image-product-desktop.jpg" alt="desktop-image" width="300">
     </div>
     <div class="product-infor">
-      <div class="product">
-        <p>PERFUME</p>
+      <div class="product-tex">
+        <div class="product">
+          <p>PERFUME</p>
+        </div>
+        <div class="product-name">
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+        </div>
+        <div class="product-description">
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.</p>
+        </div>
+        <div class="price">
+          <h2>$149.99</h2>
+          <p><s>$169.99</s></p>
+        </div>
+        <div class="add-btn">
+          <button type="button"><img src="images/icon-cart.svg">Add to Chart</button>
+        </div>
       </div>
-      <div class="product-name">
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-      </div>
-      <div class="product-description">
-        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.</p>
-      </div>
-      <div class="price">
-        <h2>$149.99</h2>
-        <p><s>$169.99</s></p>
-      </div>
-      <div class="add-btn">
-        <button type="button"><img src="images/icon-cart.svg">Add to Chart</button>
-      </div>
-
     </div>
-
   </div>
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Angela Jia Nan</a>.
