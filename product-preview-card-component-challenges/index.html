@@ -31,16 +31,18 @@
       background-color: hsl(0, 0%, 100%);
       height:430px;
     }
-    .product-img {
-    height:100%;
-    width:100%;
-    }
+
     .product-text {
       margin: 2rem;
     }
     .price {
       display:flex;
       gap: 3rem;
+    }
+    .card-image{
+      background-image: url("images/image-product-desktop.jpg");
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
     }
     h2 {
       color:hsl(158, 36%, 37%);
@@ -54,8 +56,8 @@
 <body>
   <div class="container">
     <div class="product-card">
-      <div class="product-img">
-        <img src="images/image-product-desktop.jpg" alt="desktop-image" width="288">
+      <div class="img">
+        <div class="card-image"></div>
       </div>
       <div class="product-infor">
         <div class="product-text">
