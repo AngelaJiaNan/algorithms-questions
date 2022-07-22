@@ -5,29 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body {
+      background-color:hsl(216, 12%, 8%) ;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    .card-container {
+      border-radius: 2rem;
+      display:block;
+      justify-content:center;
+      margin:auto;
+      max-width: 450px;
+      padding:10px;
+      margin-top: 11rem;
+      background-color: hsl(213, 19%, 18%);
+      height: 400px;
+    }
+    .card-infor{
+      display:flex;
+      flex-direction: column;
+      margin: 3rem;
+    }
+    .card-symbols {
+    border-radius: 5rem;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-color: hsl(217deg 5% 35% / 30%);
+    }
+    .star {
+      margin: 1.1rem;
+    }
+    .rating {
+      display: flex;
+      justify-content: space-between;
+      color: hsl(217, 12%, 63%)
+    }
+    .card-header {
+      color: hsl(0, 0%, 100%);
+    }
+    .card-content {
+      color: hsl(217, 12%, 63%);
+    }
+    .rating-btn {
+      margin: 1.3rem;
+    }
+    .card-symbols:hover {
+      background-color: hsl(216, 12%, 54%) ;
+      color: hsl(0, 0%, 100%);
+    }
+    .card-symbols:focus {
+      background-color:hsl(25, 97%, 53%) ;
+      color: hsl(0, 0%, 100%);
+    }
+    button {
+    color:hsl(0, 0%, 100%);
+    background-color:hsl(25, 97%, 53%);
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 345px;
+    margin-top: 1rem;
+    border: none;
+    }
+    button:hover {
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    }
+
   </style>
 </head>
 <body>
 
-  <!-- Rating state start -->
+ <div class="card-container">
+   <div class="card-infor">
+    <div class="card-symbols">
+      <svg width="17" height="16" class="star" xmlns="http://www.w3.org/2000/svg">
+        <path
+        d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+        fill="#FC7614" />
+      </svg>
+    </div>
+    <div class="card-header">
+      <h1>How did we do?</h1>
+    </div>
+    <div class="card-content">
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+    </div>
+    <div class="rating">
+      <div class="card-symbols">
+        <div class="rating-btn">1</div>
+      </div>
+      <div class="card-symbols">
+        <div class="rating-btn">2</div>
+      </div>
+      <div class="card-symbols">
+        <div class="rating-btn">3</div>
+      </div>
+      <div class="card-symbols">
+        <div class="rating-btn">4</div>
+      </div>
+      <div class="card-symbols">
+        <div class="rating-btn">5</div>
+      </div>
+    </div>
+    <div class="btn">
+      <button type="submit">SUBMIT</button>
+    </div>
+  </div>
+ </div>
 
-  How did we do?
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
@@ -35,15 +129,15 @@
 
   Thank you!
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
+  We appreciate you taking the time to give a rating. If you ever need more support,
   don’t hesitate to get in touch!
 
   <!-- Thank you state end -->
 
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Angela Jia Nan </a>.
   </div>
 </body>
 </html>
