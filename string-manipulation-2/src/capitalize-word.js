@@ -1,2 +1,2 @@
 /* exported capitalizeWord */
-hi hello
+hi hello test
